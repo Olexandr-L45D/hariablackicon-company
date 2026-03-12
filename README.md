@@ -77,3 +77,6 @@ common.json ← AUTO-GENERATED
 <!-- LinkedIn
 Facebook
 YouTube -->
+
+<!-- перевіряю як шукає та СЕО в пошукових системах за посиланням
+https://search.google.com/test/rich-results -->
