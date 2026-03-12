@@ -41,7 +41,7 @@ export default function HomePage() {
                 loading="lazy"
                 className={css.bigImagesTop}
                 src={startHomePage}
-                alt="Home Page"
+                alt="Industrial centrifugal ventilation fan for HVAC systems"
               />
             </figure>
             <div className={css.heroContent}>
@@ -85,7 +85,7 @@ export default function HomePage() {
                   loading="lazy"
                   className={css.images}
                   src={cardRight}
-                  alt="Heat exchangers"
+                  alt="Industrial heat exchangers for heating, cooling and HVAC systems"
                 />
               </figure>
 
@@ -109,7 +109,7 @@ export default function HomePage() {
                   loading="lazy"
                   className={css.images}
                   src={cardCenter}
-                  alt="Valves"
+                  alt="Valves Industrial systems"
                 />
               </figure>
               <h3 className={css.cartImagesText}>
@@ -131,7 +131,7 @@ export default function HomePage() {
                   loading="lazy"
                   className={css.images}
                   src={cardLeft}
-                  alt="Fans"
+                  alt="Industrial centrifugal ventilation fan for HVAC systems"
                 />
               </figure>
               <h3 className={css.cartImagesText}>

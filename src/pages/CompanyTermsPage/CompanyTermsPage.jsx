@@ -16,7 +16,7 @@ export default function CompanyTermsPage() {
             <img
               className={css.imagesHaria}
               src={Haria}
-              alt="Haria Company logo"
+              alt="Haria Black Icon Srl Company logo"
             />
           </figure>
           <p className={css.heroText}>{t("companyterms.subtitleCompany")}</p>

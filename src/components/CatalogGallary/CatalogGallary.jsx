@@ -47,7 +47,7 @@ export default function CatalogGallary() {
                 <figure className={css.titleImg}>
                   <img
                     src={newHeatMod}
-                    alt="Images Heat"
+                    alt="Industrial heat exchangers for heating, cooling and HVAC systems"
                     className={css.imgLogo}
                   />
                 </figure>
@@ -76,7 +76,7 @@ export default function CatalogGallary() {
                 <figure className={css.titleImg}>
                   <img
                     src={imagesValveMix}
-                    alt="Images Valve"
+                    alt="Valves Industrial systems"
                     className={css.imgLogo}
                   />
                 </figure>
@@ -93,7 +93,7 @@ export default function CatalogGallary() {
                 <figure className={css.titleImg}>
                   <img
                     src={imagesValves}
-                    alt="Images Valve"
+                    alt="Valves Industrial systems"
                     className={css.imgLogo}
                   />
                 </figure>
@@ -109,7 +109,7 @@ export default function CatalogGallary() {
                 <figure className={css.titleImg}>
                   <img
                     src={CentrifStainless}
-                    alt="Images Fan"
+                    alt="Industrial centrifugal ventilation fan for HVAC systems"
                     className={css.imgLogo}
                   />
                 </figure>
@@ -125,7 +125,7 @@ export default function CatalogGallary() {
                 <figure className={css.titleImg}>
                   <img
                     src={CentrifCarbon}
-                    alt="Images Fan"
+                    alt="Industrial centrifugal ventilation fan for HVAC systems"
                     className={css.imgLogo}
                   />
                 </figure>

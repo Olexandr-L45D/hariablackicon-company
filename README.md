@@ -49,3 +49,31 @@ common.json ← AUTO-GENERATED
 
 - `npm run translate:it`
 - `npm run translate:pl`
+
+<!-- потім коли отримаю лінки на лінкедін та фейсбук додаю в скрипт -->
+<!-- <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Haria Black Icon Srl",
+  "url": "https://hariablackicon-company.vercel.app/",
+  "logo": "https://hariablackicon-company.vercel.app/LogoHariaBlackIcon.png",
+  "description": "Supplier of industrial systems including fans, air valves, and industrial heat exchangers for heating, cooling, and HVAC applications across Europe.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+39 366 388 3621",
+    "contactType": "sales",
+    "areaServed": "Europe",
+    "availableLanguage": ["English", "Italian", "Polish"]
+  },
+  "sameAs": [
+    "https://www.linkedin.com/",
+    "https://www.facebook.com/",
+    "https://www.youtube.com/"
+  ]
+}
+</script>
+<!-- LinkedIn
+Facebook
+YouTube -->

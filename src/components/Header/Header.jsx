@@ -26,7 +26,7 @@ export const Header = () => {
         <NavLink to="/" className={css.titleImg}>
           <img
             src={LogoVent}
-            alt="HARIA Company logo"
+            alt="Haria Black Icon Srl Company logo"
             className={css.imgLogo}
           />
         </NavLink>

@@ -16,7 +16,11 @@ export default function AboutUsPage() {
         <section className={css.card}>
           <ul className={css.usContent}>
             <li className={css.titleHaria}>
-              <img className={css.imagesHaria} src={Haria} alt="Haria" />
+              <img
+                className={css.imagesHaria}
+                src={Haria}
+                alt="Haria Black Icon Srl"
+              />
             </li>
             <li className={css.carttextUs}>
               <strong>{t("aboutus.carttextUsTop")}</strong>
@@ -34,21 +38,37 @@ export default function AboutUsPage() {
           <section className={css.ulCard}>
             <ul className={css.topBlokImgCard}>
               <li className={css.liImgCard}>
-                <img className={css.images} src={elevator} alt="elevator" />
+                <img
+                  className={css.images}
+                  src={elevator}
+                  alt="Industrial centrifugal ventilation fan for elevator HVAC systems"
+                />
               </li>
 
               <li className={css.liImgCard}>
-                <img className={css.images} src={laboratory} alt="laboratory" />
+                <img
+                  className={css.images}
+                  src={laboratory}
+                  alt="Industrial centrifugal ventilation fan for laboratory HVAC systems"
+                />
               </li>
             </ul>
 
             <ul className={css.bottomBlokImgCard}>
               <li className={css.liImgCard}>
-                <img className={css.images} src={carWash} alt="carWash" />
+                <img
+                  className={css.images}
+                  src={carWash}
+                  alt="Industrial centrifugal ventilation fan for varnish HVAC systems"
+                />
               </li>
 
               <li className={css.liImgCard}>
-                <img className={css.images} src={bakery} alt="bakery" />
+                <img
+                  className={css.images}
+                  src={bakery}
+                  alt="Industrial centrifugal ventilation fan for bakery HVAC systems"
+                />
               </li>
             </ul>
           </section>
