@@ -79,10 +79,10 @@ export const Footer = () => {
               <li className={css.textDoman}>
                 Website:{" "}
                 <a
-                  href="https://Hariablackicon-company"
+                  href="https://hariablackicon-company.vercel.app"
                   className={css.textlinck}
                 >
-                  your-domain?
+                  Haria Blackicon-company
                 </a>
               </li>
             </ul>
