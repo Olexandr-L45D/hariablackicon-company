@@ -71,18 +71,18 @@ export const Footer = () => {
                 </a>
               </li>
 
-              <li className={css.text}>Via Santa Maria, nr 84</li>
-              <li className={css.text}>36030-Sarcedo-Vcenza-Italia</li>
+              <li className={css.text}>Via Santa Maria, 84</li>
+              <li className={css.text}>36030-Sarcedo-Vicenza-Italy</li>
               <li className={css.text}>
                 © 2025 Haria Black Icon Srl. All rights reserved
               </li>
               <li className={css.textDoman}>
-                Website:{" "}
+                Website:
                 <a
                   href="https://hariablackicon-company.vercel.app"
                   className={css.textlinck}
                 >
-                  Haria Blackicon-company
+                  Haria Black Icon Srl
                 </a>
               </li>
             </ul>

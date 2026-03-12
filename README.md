@@ -80,3 +80,10 @@ YouTube -->
 
 <!-- перевіряю як шукає та СЕО в пошукових системах за посиланням
 https://search.google.com/test/rich-results -->
+
+<!-- ще порада додати компанію в безкоштовні каталоги Європи : Додати компанію у безкоштовні каталоги B2B/industry directories. Наприклад: Kompass, Europages. Це топ пять з перешого найкрутішого -->
+<!-- https://www.europages.com Готоо-->
+<!-- https://www.kompass.com не пускає-->
+<!-- https://www.wlw.de готово-->
+<!-- https://www.yalwa.com Чи по лінку на створення компанії : https://www.yalwa.com/business/add-->
+<!-- https://www.hotfrog.com в процесі-->
