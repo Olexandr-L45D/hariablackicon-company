@@ -1,0 +1,1359 @@
+/* === Parent container === */
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin-inline: auto;
+  padding-inline: clamp(12px, 4vw, 32px);
+  padding-block: clamp(24px, 6vw, 64px);
+  background-color: #f5f1e8;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 6vw, 80px);
+}
+
+/* === HERO / BACKGROUND === */
+.background {
+  width: 100%;
+  min-height: clamp(420px, 60vw, 680px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* !!! ОБОВʼЯЗКОВО для роботи зсуву по осям Х та ігрик*/
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.cardTopImages {
+  margin-top: 80px;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  margin: 2px;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(73, 72, 72);
+}
+
+.bigImagesTop {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.heroContent {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  padding: 20px;
+}
+.cartTitleTop {
+  color: #ffffff;
+}
+.cartTextTop {
+  color: #ffffff;
+  padding: 0px;
+}
+
+.reviewsBlock {
+  max-width: 548px;
+  width: 100%;
+}
+
+.containerButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 330px;
+  justify-content: center;
+  align-items: center;
+}
+.cartBtn {
+  margin-right: 35px;
+}
+.cartBtnSecond {
+  margin-left: 35px;
+}
+.buttonViews,
+.buttonViewsSecond {
+  width: clamp(180px, 40vw, 220px);
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnVie,
+.btnVieSecond {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btnVie {
+  background-color: #222;
+  color: #fff;
+}
+
+.btnVieSecond {
+  background-color: #fbb007;
+  color: #fff;
+}
+
+.btnVie:hover,
+.btnVie:focus,
+.btnVieSecond:hover,
+.btnVieSecond:focus {
+  background: linear-gradient(
+    268.5deg,
+    rgba(251, 176, 7, 0.5) 2.63%,
+    rgba(0, 0, 0, 0.5) 97.7%
+  );
+}
+
+/* == SECTION Categories  === */
+.containerCategories {
+  width: 100%;
+  max-width: 1600px;
+  margin-inline: auto;
+  padding-inline: clamp(12px, 4vw, 32px);
+  padding-block: clamp(24px, 6vw, 64px);
+  background-color: #f5f1e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: clamp(40px, 6vw, 80px);
+}
+.titleBlock {
+  align-self: flex-start;
+  border-left: 3px solid #fbb007;
+  padding-left: 12px;
+  margin-bottom: 32px;
+}
+
+.cartTitleText {
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 600;
+  line-height: 1;
+  margin-left: 32px;
+}
+
+/* === BEST SELLERS GRID === */
+
+.ulCard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ulCardReviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.liImgCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.imgCard,
+.images {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+}
+
+.cartImagesText {
+  margin-top: -160px;
+  width: 300px;
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.imagFigure {
+  width: 95%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+/* === LARGE IMAGE SECTIONS and Advantages=== */
+.titleBlockAdvantages {
+  align-self: flex-start;
+  border-left: 3px solid #fbb007;
+  padding-left: 32px;
+  margin-left: 32px;
+  margin-bottom: 32px;
+}
+
+.cartTitleTextAdvantages {
+  display: flex;
+  justify-content: start;
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 600;
+  line-height: 1;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.containerAdvantages {
+  display: block;
+}
+
+.containerAdvantagesMobile {
+  display: none;
+}
+@media (max-width: 799px) {
+  .containerAdvantages {
+    display: none;
+  }
+
+  .containerAdvantagesMobile {
+    display: block;
+    width: 98%;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .advantagesMobileImage {
+    width: 98%;
+    height: auto;
+  }
+}
+
+/* === Advantages   === */
+.containerAdvantages {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cardImagesFigure {
+  width: 100%;
+}
+
+.cardBigImages {
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.bigImages {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  display: block;
+}
+.labelTop,
+.labelLeft,
+.labelRight,
+.labelBotton {
+  position: absolute;
+  max-width: 300px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+
+  text-align: center;
+}
+.labelTop {
+  top: -30px;
+  left: 0%;
+  transform: translateX(-5%);
+}
+.labelLeft {
+  top: 30%;
+  left: -10px;
+  transform: translateY(-60%);
+  text-align: right;
+}
+.labelRight {
+  top: 40%;
+  right: 30px;
+  transform: translateY(-60%);
+  text-align: left;
+}
+.labelBotton {
+  max-width: 500px;
+  bottom: 25px;
+  left: 80%;
+  right: 5px;
+  transform: translateX(-50%);
+}
+/* === PRODUCER CARD === */
+.cardProducer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.cardProdText {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px;
+  padding: clamp(16px, 4vw, 32px);
+  background: rgba(251, 176, 7, 0.5);
+  border-radius: 20px;
+  font-size: clamp(18px, 3vw, 32px);
+  line-height: 1.3;
+  text-align: left;
+}
+/* === Reviews CARD === */
+.reviewsBlock {
+  max-width: 548px;
+  width: 100%;
+  height: 256px;
+  opacity: 1;
+  top: 19px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border-width: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.reviewsTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: left;
+  text-align: left;
+  gap: 20px;
+  width: 100%;
+  margin-left: 35px;
+  height: 144;
+  opacity: 1;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.reviewsText {
+  margin: 10px;
+  padding: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  justify-content: start;
+  align-items: left;
+  text-align: left;
+}
+.containerReviews {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+  text-align: left;
+}
+.titleBlockReviews {
+  align-self: flex-start;
+  border-left: 3px solid #fbb007;
+  padding-left: 12px;
+  margin-bottom: 32px;
+  margin-left: 32px;
+}
+/* === MOBILE TWEAKS === */
+@media (max-width: 767px) {
+  .titleBlock {
+    align-self: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 579px) {
+  .containerAdvantages {
+    display: none;
+  }
+  .container {
+    padding: 8px;
+    gap: 48px;
+  }
+  .background {
+    margin-top: 50px;
+    padding: 8px;
+  }
+
+  .heroContent {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .cartTitleTop {
+    position: relative;
+    width: 90%;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .cartTextTop {
+    position: relative;
+    width: 90%;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .containerButtons {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cartBtn,
+  .cartBtnSecond {
+    margin: 0;
+  }
+
+  /* BEST SELLERS */
+
+  .ulCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* ADVANTAGES */
+  .cardImagesFigure {
+    width: 95%;
+  }
+
+  .cardBigImages {
+    order: -1;
+  }
+
+  /* PRODUCER */
+
+  .cardProdText {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* REVIEWS */
+
+  .containerReviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ulCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviewsBlock {
+    max-width: 548px;
+    width: 100%;
+    height: 350px;
+    opacity: 1;
+    top: 19px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border-width: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .reviewsTitle {
+    margin-left: 0;
+    margin-top: 5px;
+    justify-content: center;
+  }
+
+  .reviewsText {
+    text-align: center;
+  }
+  .titleBlock {
+    margin-left: 0px;
+  }
+  .containerMobile {
+    width: 95%;
+    margin-left: 0px;
+  }
+  .titleBlock {
+    align-self: flex-start;
+    border-left: 3px solid #fbb007;
+    padding-left: 12px;
+    margin-bottom: 32px;
+  }
+  .titleBlockMobile {
+    align-self: flex-start;
+    border-left: 3px solid #fbb007;
+    padding-left: 0px;
+    margin-left: 25px;
+    margin-bottom: 32px;
+  }
+  .ulCardCategories {
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .liImgCard {
+    margin: 5px;
+    padding: 2px;
+    padding-top: 20px;
+  }
+  .imgCard {
+    margin: 4px;
+    padding: 2px;
+    margin-top: 2px;
+    padding-top: 2px;
+    width: 100%;
+    max-width: 400px;
+    height: 480px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+  }
+  .images {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+  }
+  .cartImagesText {
+    margin-top: -180px;
+    width: 100%;
+    font-size: 20px;
+  }
+  .imagFigure {
+    width: 95%;
+  }
+  .buttonViewsSecond {
+    padding: 5px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+  .buttonViewsSecondMobil {
+    width: clamp(180px, 40vw, 220px);
+    padding: 2px;
+    margin: 4px;
+    margin-bottom: 40px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnVieSecond {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(16px, 2.5vw, 24px);
+    font-weight: 500;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .btnVieSecond {
+    background-color: #fbb007;
+    color: #fff;
+  }
+
+  .btnVieSecond:hover,
+  .btnVieSecond:focus {
+    background: linear-gradient(
+      268.5deg,
+      rgba(251, 176, 7, 0.5) 2.63%,
+      rgba(0, 0, 0, 0.5) 97.7%
+    );
+  }
+}
+
+@media (min-width: 580px) and (max-width: 767px) {
+  .containerAdvantages {
+    display: none;
+  }
+  .container {
+    padding-inline: 16px;
+    gap: 48px;
+  }
+  .background {
+    margin-top: 50px;
+  }
+
+  /* HERO */
+  .heroContent {
+    margin-top: 70px;
+  }
+  .cartTitleTop {
+    position: relative;
+    width: 90%;
+    font-size: 28px;
+    margin: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .cartTextTop {
+    position: relative;
+    width: 90%;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .containerButtons {
+    margin-top: 0px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cartBtn,
+  .cartBtnSecond {
+    margin: 0;
+  }
+
+  /* BEST SELLERS */
+
+  .ulCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cartImagesText {
+    margin-top: -120px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .cardImagesFigure {
+    width: 95%;
+  }
+
+  .cardBigImages {
+    order: -1;
+  }
+
+  /* PRODUCER */
+
+  .cardProdText {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* REVIEWS */
+
+  .containerReviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviewsBlock {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .reviewsTitle {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .reviewsText {
+    text-align: center;
+  }
+  .titleBlock {
+    margin-left: 0px;
+  }
+  .containerMobile {
+    width: 95%;
+    margin-left: 0px;
+  }
+  .titleBlock {
+    align-self: flex-start;
+    border-left: 3px solid #fbb007;
+    padding-left: 12px;
+    margin-bottom: 32px;
+  }
+  .titleBlockMobile {
+    align-self: flex-start;
+    border-left: 3px solid #fbb007;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 32px;
+  }
+  .imgCard {
+    width: 90%;
+    height: 90%;
+  }
+  .imagFigure {
+    width: 95%;
+  }
+  .ulCardCategories {
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .liImgCard {
+    margin: 5px;
+    padding: 2px;
+    padding-top: 20px;
+  }
+  .imgCard {
+    margin: 4px;
+    padding: 2px;
+  }
+  .imgCard,
+  .images {
+    width: 100%;
+    max-width: 400px;
+    height: 480px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+  }
+  .containerButtons {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    gap: 64px;
+  }
+  .background {
+    margin-top: 50px;
+  }
+
+  /* HERO */
+
+  .cartTitleTop {
+    width: 80%;
+    font-size: 34px;
+    margin-top: 110px;
+    margin-bottom: 10px;
+  }
+
+  .cartTextTop {
+    width: 80%;
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+
+  .containerButtons {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* BEST SELLERS */
+  .containerCategories {
+    width: 100%;
+    display: flex;
+  }
+  .ulCardCategories {
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .liImgCard {
+    margin: 5px;
+    padding: 2px;
+    padding-top: 20px;
+  }
+  .imgCard {
+    margin: 4px;
+    padding: 2px;
+  }
+  .imgCard,
+  .images {
+    width: 100%;
+    max-width: 330px;
+    height: 440px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+  }
+
+  .cartImagesText {
+    font-size: 24px;
+  }
+
+  /* ADVANTAGES */
+
+  .labelTop,
+  .labelLeft,
+  .labelRight,
+  .labelBotton {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelTop {
+    top: -40px;
+    left: 0%;
+    transform: translateX(-0%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelLeft {
+    top: 30%;
+    left: 40px;
+    transform: translateY(-20%);
+    text-align: right;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelRight {
+    top: 30%;
+    right: 30px;
+    transform: translateY(-60%);
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelBotton {
+    max-width: 500px;
+    bottom: 0px;
+    left: 80%;
+    right: 5px;
+    transform: translateX(-50%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  /* REVIEWS */
+
+  .reviewsBlock {
+    width: calc(50% - 20px);
+  }
+  .ulCardReviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* =====================================================
+   DESCTOP
+   ===================================================== */
+@media (min-width: 1280px) and (max-width: 1340px) {
+  .ulCardCategories {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .liImgCard {
+    margin: 1px;
+    padding: 1px;
+  }
+  .imgCard {
+    margin: 6px;
+    padding: 3px;
+  }
+  .imgCard,
+  .images {
+    width: 370px;
+    height: 460px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+  }
+}
+@media (min-width: 1341px) and (max-width: 1440px) {
+  .cartTitleTop {
+    position: absolute;
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 200px;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    z-index: 500;
+  }
+  .cartTextTop {
+    position: absolute;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    margin: 40px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    z-index: 500;
+    display: flex;
+    justify-content: start;
+  }
+  .ulCardCategories {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .imgCard {
+    margin: 8px;
+    padding: 3px;
+  }
+  .imgCard,
+  .images {
+    width: 400px;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .labelTop,
+  .labelLeft,
+  .labelRight,
+  .labelBotton {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelTop {
+    top: -30px;
+    left: 0%;
+    transform: translateX(-0%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelLeft {
+    top: 30%;
+    left: 40px;
+    transform: translateY(-20%);
+    text-align: right;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelRight {
+    top: 30%;
+    right: 30px;
+    transform: translateY(-60%);
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelBotton {
+    max-width: 500px;
+    bottom: 0px;
+    left: 80%;
+    right: 5px;
+    transform: translateX(-20%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  /* REVIEWS */
+
+  .reviewsBlock {
+    width: calc(50% - 20px);
+  }
+  .containerCategories {
+    width: 98%;
+    display: flex;
+  }
+  .ulCardCategories {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .imgCard {
+    margin: 10px;
+    padding: 3px;
+  }
+  .cartTitleTop {
+    position: absolute;
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 200px;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    z-index: 500;
+  }
+  .cartTextTop {
+    position: absolute;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    margin: 40px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    z-index: 500;
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1800px) {
+  .labelTop,
+  .labelLeft,
+  .labelRight,
+  .labelBotton {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelTop {
+    top: -30px;
+    left: 0%;
+    transform: translateX(-0%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelLeft {
+    top: 30%;
+    left: 40px;
+    transform: translateY(-20%);
+    text-align: right;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelRight {
+    top: 30%;
+    right: 30px;
+    transform: translateY(-60%);
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelBotton {
+    max-width: 500px;
+    bottom: 0px;
+    left: 80%;
+    right: 5px;
+    transform: translateX(-20%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  /* REVIEWS */
+
+  .reviewsBlock {
+    width: calc(50% - 20px);
+  }
+  .containerCategories {
+    width: 98%;
+    display: flex;
+  }
+  .ulCardCategories {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .liImgCard {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .imgCard,
+  .images {
+    width: 430px;
+    height: 530px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+  }
+  .cartTitleTop {
+    position: absolute;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 200px;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    z-index: 500;
+  }
+  .cartTextTop {
+    position: absolute;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    margin: 40px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    z-index: 500;
+    display: flex;
+    justify-content: start;
+  }
+}

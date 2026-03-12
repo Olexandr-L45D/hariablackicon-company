@@ -1,0 +1,108 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(249, 240, 240, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  z-index: 2000;
+  max-height: calc(100vh - 20px);
+}
+
+.modal {
+  width: 95%;
+  min-width: 200px;
+  max-width: 650px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto; /* ⬅️ скрол всередині */
+  background: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* ===== Close button ===== */
+.closeBtn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 5;
+}
+
+/* ===== Content wrapper ===== */
+.mapBox {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(100vh - 20px);
+}
+
+@media screen and (min-width: 200px) and (max-width: 678px) {
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(249, 240, 240, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 👈 НЕ center а з верху */
+    padding-top: 2px;
+    margin: 2px;
+    z-index: 2000;
+    max-height: calc(100vh - 20px); /* ✅ не вилізає за екран */
+  }
+  .modal {
+    width: 95%;
+    max-width: 320px;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 20px);
+  }
+  .mapBox {
+    max-height: calc(100vh - 20px);
+  }
+}
+
+@media screen and (min-width: 679px) and (max-width: 1020px) {
+  .modal {
+    width: 95%;
+    max-width: 650px;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 40px);
+  }
+}
+
+@media (min-width: 1021px) and (max-width: 1439px) {
+  .modal {
+    width: 95%;
+    max-width: 650px;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 60px);
+  }
+}
+@media (min-width: 1440px) {
+  .modal {
+    width: 95%;
+    max-width: 650px;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 80px);
+  }
+}

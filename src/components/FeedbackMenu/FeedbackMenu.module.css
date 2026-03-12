@@ -1,0 +1,295 @@
+/* Кнопка у футері */
+.feedbackEntryBtn {
+  background: linear-gradient(135deg, #f5f1e8, #fbb007);
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin: 8px auto;
+  text-align: center;
+}
+.feedbackEntryBtn {
+  background-color: #fbb007;
+  color: #fff;
+}
+
+.feedbackEntryBtn:hover,
+.feedbackEntryBtn:focus {
+  background: linear-gradient(
+    268.5deg,
+    rgba(251, 176, 7, 0.5) 2.63%,
+    rgba(205, 190, 190, 0.5) 97.7%
+  );
+}
+
+.feedbackEntryBtn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Оверлей */
+.feedbackModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  animation: fadeIn 0.35s ease;
+}
+.feedbackModalOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Вікно модалки */
+.feedbackModal {
+  margin-top: 120px;
+  background: #fff;
+  width: 90%;
+  max-width: 360px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.6);
+  animation: slideUp 0.35s ease;
+  text-align: center;
+}
+.feedbackModal {
+  margin: 0 auto;
+  transform: translateZ(0); /* анти-зсув на мобілках */
+}
+
+.modalTitle {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #444;
+  font-weight: 600;
+}
+
+/* Сітка кнопок */
+.modalButtons {
+  display: grid;
+  gap: 12px;
+  color: #222222;
+}
+
+.modalBtn {
+  background: #f8f3ff;
+  border: 1px solid #e3d9ff;
+  padding: 12px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #222222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.modalBtn:hover {
+  background: #f5f1e8;
+  transform: translateY(-2px);
+}
+
+/* Іконка */
+.icon {
+  font-size: 22px;
+  color: #222222;
+}
+.iconEm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Кнопка закриття */
+
+.modalClose {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 140px;
+  max-width: 160px;
+  height: 40px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #fbb00780;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.modalClose:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.modalClose:hover {
+  background: var(--ghost-white, #fafafa);
+  border: 2px solid;
+
+  border-color: linear-gradient(
+    267.82deg,
+    rgba(251, 176, 7, 0.5) 35.01%,
+    rgba(0, 0, 0, 0.5) 79.1%
+  );
+}
+.modalClose:focus {
+  background: var(--ghost-white, #fafafa);
+  border: 2px solid;
+  border-color: linear-gradient(
+    267.82deg,
+    rgba(251, 176, 7, 0.5) 35.01%,
+    rgba(0, 0, 0, 0.5) 79.1%
+  );
+}
+
+/* Анімації */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modalBtn {
+  background: #f8f3ff;
+  border: 1px solid #e3d9ff;
+  padding: 12px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: #222222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.modalBtn:hover {
+  background: #f5f1e8;
+  transform: translateY(-2px);
+}
+
+/* Обгортка для форми */
+.formWrapper {
+  margin-top: 16px;
+}
+
+.link {
+  padding: 8px 10px;
+  margin: 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.iconText {
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 678px) {
+  .feedbackModalOverlay {
+    padding: 10px;
+  }
+
+  .feedbackModal {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 280px;
+    max-height: calc(100vh - 20px);
+  }
+
+  .modalButtons {
+    max-height: calc(100vh - 20px);
+  }
+  .modalClose {
+    margin: 2px;
+    margin-top: 10px;
+    width: 120px;
+    max-width: 140px;
+    height: 40px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    background: #fbb00780;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  .button {
+    margin: 5px;
+    max-width: 170px;
+    height: 49px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background: #fbb00780;
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  .modalTitle {
+    margin: 5px;
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 600;
+  }
+
+  /* buttons grid */
+  .modalButtons {
+    display: grid;
+    gap: 8px;
+    color: #222222;
+  }
+
+  .modalBtn {
+    background: #f8f3ff;
+    border: 1px solid #e3d9ff;
+    padding: 4px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #222222;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.25s ease;
+  }
+}

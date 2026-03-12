@@ -1,0 +1,406 @@
+.container {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.background {
+  width: 100%;
+  background: #222;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  /* position: relative; */
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr 420px;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 20px;
+}
+.blockBlendBottom {
+  width: 100%;
+  /* height: 200px; */
+}
+.imagesBlendBottom {
+  width: 100%;
+  display: block;
+}
+/* ================= */
+/* LEFT GRID IMAGE */
+/* ================= */
+
+.imgCardGrid {
+  left: 0;
+  top: 0;
+  width: 140px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imagesGrid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-fit: cover; - щоб не обрізало */
+}
+
+.images {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= */
+/* TEXT */
+/* ================= */
+
+.usContent {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  max-width: 520px;
+}
+
+.titleHaria {
+  width: 260px;
+}
+
+.carttextUs strong {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: clamp(16px, 1.1vw, 20px);
+  line-height: 1.5;
+}
+
+/* ================= */
+/* RIGHT IMAGE GRID */
+/* ================= */
+
+.ulCard {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topBlokImgCard,
+.bottomBlokImgCard {
+  display: flex;
+  gap: 20px;
+}
+
+.liImgCard {
+  width: 200px;
+}
+
+.liImgCard img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ================= */
+/* LARGE SCREENS */
+/* ================= */
+
+@media (min-width: 1440px) {
+  .container {
+    width: 100%;
+  }
+  .background {
+    width: 100%;
+    margin-top: 50px;
+    width: 100%;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 70px;
+    width: 100%;
+    max-width: 1600px;
+    gap: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .ulCard {
+    width: 100%;
+    max-width: 800px;
+  }
+  .topBlokImgCard {
+    gap: 40px;
+  }
+  .liImgCard {
+    width: 380px;
+  }
+  .images {
+    width: 380px;
+  }
+  .imgCardGrid {
+    width: 300px;
+  }
+  .imagesGrid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .usContent {
+    list-style: none;
+    padding: 10;
+    margin: 10;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    /* width: 300px; */
+    max-width: 400px;
+  }
+}
+
+/* ================= */
+/* TABLET 700-1440 */
+/* ================= */
+
+@media (max-width: 1440px) {
+  .container {
+    width: 100%;
+  }
+
+  .background {
+    width: 100%;
+    margin-top: 50px;
+    width: 100%;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .card {
+    width: 100%;
+    max-width: 1440px;
+    margin-top: 50px;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imgCardGrid {
+    width: 120px;
+  }
+  .ulCard {
+    width: 100%;
+    max-width: 620px;
+  }
+  .topBlokImgCard {
+    width: 100%;
+    gap: 30px;
+    max-width: 620px;
+  }
+  .bottomBlokImgCard {
+    width: 100%;
+    gap: 30px;
+    max-width: 620px;
+  }
+  .liImgCard {
+    width: 350px;
+    /* height: 300px; */
+  }
+  .imagesHaria {
+    width: 220px;
+  }
+  .images {
+    width: 350px;
+    height: auto;
+  }
+  .usContent {
+    list-style: none;
+    padding: 10;
+    margin: 10;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    /* width: 300px; */
+    max-width: 400px;
+  }
+}
+
+/* ================= */
+/* SMALL TABLET */
+/* ================= */
+
+@media (max-width: 1000px) {
+  .card {
+    grid-template-columns: 120px 1fr;
+
+    gap: 40px;
+  }
+
+  .ulCard {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topBlokImgCard {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bottomBlokImgCard {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .liImgCard {
+    width: 200px;
+  }
+  .images {
+    width: 200px;
+  }
+  .usContent {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    /* width: 300px; */
+    max-width: 400px;
+  }
+}
+
+/* ================= */
+/* MOBILE */
+/* ================= */
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* елементи один під одним */
+    justify-content: center; /* центр по вертикалі */
+    align-items: center; /* центр по горизонталі */
+    text-align: center; /* центрує текст */
+    width: 100%;
+    min-height: 100vh;
+    /* margin: 1px;
+    padding: 1px; */
+  }
+  .background {
+    width: 100%;
+    margin: 1px;
+    padding: 1px;
+    margin-top: 50px;
+    background: #222;
+    display: flex;
+    flex-direction: column; /* елементи один під одним */
+    justify-content: center; /* центр по вертикалі */
+    align-items: center; /* центр по горизонталі */
+    text-align: center; /* центрує текст */
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 16px;
+    gap: 40px;
+    width: 100%;
+  }
+
+  /* текст */
+
+  .usContent {
+    max-width: 90%;
+  }
+
+  /* контейнер картинок */
+
+  .ulCard {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column; /* елементи один під одним */
+    justify-content: center; /* центр по вертикалі */
+    align-items: center; /* центр по горизонталі */
+    text-align: center;
+    gap: 16px;
+    margin: 5px;
+    padding: 2px;
+  }
+
+  /* ряд картинок */
+
+  .topBlokImgCard,
+  .bottomBlokImgCard {
+    display: flex;
+
+    width: 100%;
+    gap: 16px;
+  }
+
+  /* картинка */
+
+  .liImgCard {
+    flex: 1;
+  }
+  .liImgCard {
+    width: 95%;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .images {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+  }
+}
+@media (max-width: 380px) {
+  .topBlokImgCard,
+  .bottomBlokImgCard {
+    gap: 12px;
+  }
+}

@@ -1,0 +1,94 @@
+/* ContactMapModal.module.css
+
+/* ===== Overlay ===== */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /*this is  not center */
+  padding-top: 90px; /* top with header */
+  z-index: 2000;
+}
+
+/* ===== Modal ===== */
+.modal {
+  width: 95%;
+  max-width: 400px;
+  background: white;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  max-height: calc(100vh - 120px); /* ✅ не вилізає за екран */
+}
+
+/* ===== Close button ===== */
+.closeBtn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 5;
+}
+
+/* ===== Content wrapper ===== */
+.mapBox {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(100vh - 20px);
+}
+
+@media screen and (min-width: 200px) and (max-width: 678px) {
+  .overlay {
+    position: fixed;
+    inset: 0;
+    /* background: rgba(0, 0, 0, 0.55); */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 👈 НЕ center */
+    padding-top: 10px;
+    margin: 20px;
+    margin-top: 10px;
+    z-index: 2000;
+    max-height: calc(100vh - 100px);
+    /* height: 400px; */
+  }
+  .modal {
+    width: 95%;
+    max-width: 320px;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 40px);
+    /* height: 400px; */
+  }
+  .mapBox {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: calc(100vh - 20px);
+    /* height: 400px; */
+  }
+}
+
+@media screen and (min-width: 679px) and (max-width: 1020px) {
+  .modal {
+    width: 95%;
+    max-width: 400px;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 40px); /* ✅ не вилізає за екран */
+  }
+}

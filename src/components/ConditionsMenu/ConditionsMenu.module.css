@@ -1,0 +1,119 @@
+/* ConditionsMenu */
+.buttonHead {
+  width: 270px;
+  min-width: 270px;
+  height: 60px;
+  width: 95%;
+  margin: 2px;
+  padding: 6px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: SemiBold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
+  background: rgba(239, 223, 7, 0.6);
+  cursor: pointer;
+  border-radius: 20px;
+}
+.buttonHead {
+  background-color: #fbb007;
+  color: #fff;
+  font-size: clamp(16px, 2.5vw, 24px);
+}
+
+.buttonHead:hover,
+.buttonHead:focus {
+  background: linear-gradient(
+    268.5deg,
+    rgba(251, 176, 7, 0.5) 2.63%,
+    rgba(0, 0, 0, 0.5) 97.7%
+  );
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .buttonHead {
+    width: 270px;
+    min-width: 270px;
+    height: 50px;
+    width: 95%;
+    margin: 2px;
+    padding: 6px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: SemiBold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: black;
+    background: rgba(239, 223, 7, 0.6);
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .buttonHead {
+    background-color: #fbb007;
+    color: #fff;
+    font-size: clamp(16px, 2.5vw, 24px);
+  }
+
+  .buttonHead:hover,
+  .buttonHead:focus {
+    background: linear-gradient(
+      268.5deg,
+      rgba(251, 176, 7, 0.5) 2.63%,
+      rgba(0, 0, 0, 0.5) 97.7%
+    );
+  }
+}
+
+@media (min-width: 768px) {
+  .buttonHead {
+    max-width: 300px;
+    background-color: #fbb007;
+    color: #fff;
+  }
+  .buttonHead {
+    width: clamp(180px, 40vw, 220px);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonHead {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: clamp(16px, 2.5vw, 24px);
+    font-weight: 500;
+
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .buttonHead {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .buttonHead {
+    background-color: #fbb007;
+    color: #fff;
+  }
+
+  .buttonHead:hover,
+  .buttonHead:focus {
+    background: linear-gradient(
+      268.5deg,
+      rgba(251, 176, 7, 0.5) 2.63%,
+      rgba(0, 0, 0, 0.5) 97.7%
+    );
+  }
+}

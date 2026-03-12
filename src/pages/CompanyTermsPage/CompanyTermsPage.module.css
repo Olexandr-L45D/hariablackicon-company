@@ -1,0 +1,212 @@
+/* CompanyTermsPage.module.css */
+.page {
+  width: 100%;
+  background-color: #f5f1e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 70px;
+  padding-top: 120px;
+}
+
+/* HERO */
+
+.hero {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 24px;
+  max-width: 620px;
+  line-height: 1.4;
+}
+
+/* LOGO */
+
+.titleHaria {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.imagesHaria {
+  width: 400px;
+  height: 50px;
+}
+
+/* SECTIONS */
+
+.section {
+  width: 100%;
+  max-width: 1100px;
+
+  padding: 0 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 16px;
+}
+
+/* TITLE */
+
+.titleParagraf {
+  width: 100%;
+  border-left: 4px solid #fbb007;
+  padding-left: 16px;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* TEXT */
+
+.section p {
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+/* LIST */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 22px;
+  max-width: 800px;
+}
+
+/* NOTE */
+
+.note {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* DOC */
+
+.docActions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* CONTACTS */
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 22px;
+}
+.blockBlendBottom {
+  width: 100%;
+}
+.imagesBlendBottom {
+  width: 100%;
+}
+.wrapper {
+  margin-bottom: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: left;
+}
+/* ================= */
+/* TABLET */
+/* ================= */
+
+@media (max-width: 1024px) {
+  .page {
+    padding-top: 100px;
+    gap: 50px;
+  }
+  .hero {
+    padding: 0px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .titleParagraf {
+    font-size: 30px;
+  }
+
+  .section p,
+  .list,
+  .contacts {
+    font-size: 20px;
+  }
+
+  .imagesHaria {
+    width: 280px;
+    height: 35px;
+  }
+}
+
+/* ================= */
+/* MOBILE */
+/* ================= */
+
+@media (max-width: 600px) {
+  .page {
+    padding-top: 100px;
+    gap: 50px;
+  }
+  .hero {
+    margin-top: 50px;
+    padding: 0px;
+  }
+  .hero,
+  .section {
+    padding: 0 18px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .titleParagraf {
+    font-size: 24px;
+  }
+
+  .section p,
+  .list,
+  .contacts {
+    font-size: 18px;
+  }
+
+  .imagesHaria {
+    width: 220px;
+    height: 25px;
+  }
+}
