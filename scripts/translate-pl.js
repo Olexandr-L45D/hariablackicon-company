@@ -10,25 +10,32 @@ if (!fs.existsSync(sourcePath)) {
 }
 
 const source = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
-const result = {};
 
-async function walk(obj, res) {
-  for (const key in obj) {
-    if (typeof obj[key] === "string") {
-      res[key] = await translate(obj[key], { to: "pl" });
-    } else if (typeof obj[key] === "object" && obj[key] !== null) {
-      res[key] = {};
-      await walk(obj[key], res[key]);
+const existing = fs.existsSync(targetPath)
+  ? JSON.parse(fs.readFileSync(targetPath, "utf8"))
+  : {};
+
+async function walk(sourceObj, targetObj) {
+  for (const key in sourceObj) {
+    if (typeof sourceObj[key] === "string") {
+      // ✅ якщо вже є переклад — не чіпаємо
+      if (targetObj[key]) {
+        continue;
+      }
+
+      targetObj[key] = await translate(sourceObj[key], { to: "pl" });
+    } else {
+      if (!targetObj[key]) targetObj[key] = {};
+      await walk(sourceObj[key], targetObj[key]);
     }
   }
 }
-
 (async () => {
-  console.log("🇵🇱 Translating EN → PL...");
-  await walk(source, result);
+  console.log("🇮🇹 Translating EN → PL...");
+  await walk(source, existing);
 
   fs.mkdirSync("./public/locales/pl", { recursive: true });
-  fs.writeFileSync(targetPath, JSON.stringify(result, null, 2), "utf8");
+  fs.writeFileSync(targetPath, JSON.stringify(existing, null, 2), "utf8");
 
-  console.log("✅ Polish translation generated:", targetPath);
+  console.log("✅ Poland translation updated and new generated:", targetPath);
 })();

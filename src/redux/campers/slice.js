@@ -1,5 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchAllTruck, findTruckById } from "./operations";
+import {
+  fetchAllTruck,
+  findTruckById,
+  findHeatExchangeById,
+  findValveDetailsById,
+} from "./operations";
 
 const campersSlice = createSlice({
   name: "campers",
@@ -25,42 +30,6 @@ const campersSlice = createSlice({
         state.error = null;
         state.loading = false;
       })
-
-      // .addCase(fetchAllTruck.fulfilled, (state, action) => {
-      //   console.log("Fetched Items:", action.payload);
-
-      //   // const items = action.payload?.items ?? [];
-      //   const items = action.payload ?? [];
-
-      //   const newItems = items.filter(
-      //     item => !state.items.some(existing => existing.id === item.id)
-      //   );
-
-      //   state.items = [...state.items, ...newItems];
-      //   state.loading = false;
-      //   state.isFetched = true;
-
-      //   state.totalpages = Math.ceil((action.payload?.total ?? 0) / 4);
-
-      //   if (state.page < state.totalpages) {
-      //     state.page += 1;
-      //   }
-      // })
-
-      // .addCase(fetchAllTruck.fulfilled, (state, action) => {
-      //   console.log("Fetched Items:", action.payload.items);
-      //   const newItems = action.payload.items.filter(
-      //     item => !state.items.some(existing => existing.id === item.id)
-      //   );
-      //   state.items = [...state.items, ...newItems];
-      //   state.loading = false;
-      //   state.isFetched = true;
-      //   state.totalpages = Math.ceil(action.payload.total / 4);
-      //   if (state.page < state.totalpages) {
-      //     state.page += 1;
-      //   }
-      // })
-
       .addCase(fetchAllTruck.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message;
@@ -74,6 +43,32 @@ const campersSlice = createSlice({
         state.error = null;
       })
       .addCase(findTruckById.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload; // Серіалізовані дані про помилку
+      })
+      // add new endpoint/redax - findHeatExchangeById
+      .addCase(findHeatExchangeById.pending, state => {
+        state.loading = true;
+      })
+      .addCase(findHeatExchangeById.fulfilled, (state, action) => {
+        state.selectedTruck = action.payload; // Зберігаємо деталі findHeatExchangeById
+        state.loading = false;
+        state.error = null;
+      })
+      .addCase(findHeatExchangeById.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload; // Серіалізовані дані про помилку
+      })
+      // add new findValveDetailsById
+      .addCase(findValveDetailsById.pending, state => {
+        state.loading = true;
+      })
+      .addCase(findValveDetailsById.fulfilled, (state, action) => {
+        state.selectedTruck = action.payload; // Зберігаємо деталі findValveDetailsById
+        state.loading = false;
+        state.error = null;
+      })
+      .addCase(findValveDetailsById.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload; // Серіалізовані дані про помилку
       });

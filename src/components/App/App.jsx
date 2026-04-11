@@ -22,6 +22,10 @@ const FeedbackModalPhone = lazy(() =>
   import("../FeedbackModalPhone/FeedbackModalPhone")
 );
 const FenDetails = lazy(() => import("../FenDetails/FenDetails"));
+const HeatExchangeDetails = lazy(() =>
+  import("../HeatExchangeDetails/HeatExchangeDetails")
+);
+const ValveDetails = lazy(() => import("../ValveDetails/ValveDetails"));
 
 export default function App() {
   return (
@@ -34,6 +38,8 @@ export default function App() {
           <Route path="/companyTerms" element={<CompanyTermsPage />} />
           <Route path="/feedbackEmail" element={<FeedbackEmailModal />} />
           <Route path="/feedbackPhone" element={<FeedbackModalPhone />} />
+          <Route path="/heat/:id" element={<HeatExchangeDetails />} />
+          <Route path="/valve/:id" element={<ValveDetails />} />
           <Route path="/fen/:id" element={<FenDetails />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

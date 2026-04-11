@@ -977,7 +977,7 @@ a:focus {
   }
 }
 
-@media (min-width: 1440px) and (max-width: 2000px) {
+@media (min-width: 1440px) and (max-width: 3000px) {
   /* === FOOTER WRAPPER — завжди 100% === */
   .footer {
     width: 100%;

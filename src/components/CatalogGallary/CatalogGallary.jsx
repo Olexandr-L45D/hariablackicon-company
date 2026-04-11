@@ -34,6 +34,14 @@ export default function CatalogGallary() {
   if (!trucks || trucks.length === 0) {
     return <div>No Ventilation available</div>;
   }
+  // додаткова константа щоб перекидати на окремі картки по окремим категоріям товарів
+  const routeMap = {
+    "heat-exchanger": "heat",
+    valves: "valve",
+    centrifugal: "fen",
+    radial: "fen",
+    axial: "fen",
+  };
   return (
     <container className={css.containerCatalog}>
       <section className={css.containerList}>
@@ -149,7 +157,10 @@ export default function CatalogGallary() {
                     <h3 className={css.titles}>{truck.name}</h3>
                   </figure>
                   <div className={css.buttonIconShowe}>
-                    <NavLink className={css.btnShowe} to={`/fen/${truck.id}`}>
+                    <NavLink
+                      className={css.btnShowe}
+                      to={`/${routeMap[truck.category]}/${truck.id}`}
+                    >
                       {t("navigation.show_more")}
                     </NavLink>
                   </div>

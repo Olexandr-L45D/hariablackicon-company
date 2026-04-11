@@ -48,41 +48,143 @@ export const findTruckById = createAsyncThunk(
     }
   }
 );
+// верхні 2 поки коментую потім заміню
+// імпортую нову функцію перекладу для нових джейсон файлів в папці :public/data/projectProductTable.en.json
+// import { getProductsFile } from "../../../i18n.js"; // або з utils якщо виніс
 
 // export const fetchAllTruck = createAsyncThunk(
 //   "campers/fetchAllTruck",
-
 //   async ({ page = 1 }, { thunkAPI, getState }) => {
 //     try {
+//       // ✅ отримуємо правильний файл по мові
+//       const file = getProductsFile();
+
+//       const response = await fetch(file);
+//       const data = await response.json();
+
 //       const filter = getState().filters.filters;
 
-//       const response = await axios.get("/", {
-//         params: {
-//           page,
-//           filter,
-//           limit: 4,
-//         },
+//       // 🔎 ФІЛЬТРАЦІЯ
+//       const filtered = data.filter(item => {
+//         if (filter.category && item.category !== filter.category) {
+//           return false;
+//         }
+//         if (filter.subcategory && item.subcategory !== filter.subcategory) {
+//           return false;
+//         }
+//         return true;
 //       });
 
-//       return response.data;
-//       // `axios` автоматично повертає вже розпарсений JSON у response.data
+//       // 📄 ПАГІНАЦІЯ
+//       const limit = 8;
+//       const start = (page - 1) * limit;
+//       const end = start + limit;
+
+//       const paginated = filtered.slice(start, end);
+
+//       return paginated; // ✅ МАСИВ (як і було потрібно)
 //     } catch (e) {
-//       // При помилці запиту повертаємо проміс, який буде відхилений з текстом помилки
 //       return thunkAPI.rejectWithValue(e.message);
 //     }
 //   }
 // );
-
+// // запит по айді одного продукта на FenDetails
 // export const findTruckById = createAsyncThunk(
 //   "campers/findTruckById",
 //   async (id, thunkAPI) => {
 //     try {
-//       const response = await axios.get("/", { params: { id } });
-//       return response.data; // Повертаємо об'єкт, який прийшов із сервера
+//       // ✅ той самий підхід
+//       const file = getProductsFile();
+
+//       const response = await fetch(file);
+//       const data = await response.json();
+
+//       const item = data.find(el => String(el.id) === String(id));
+
+//       return item;
 //     } catch (error) {
-//       // Перевіряємо, чи це AxiosError, і передаємо серіалізовану інформацію
 //       return thunkAPI.rejectWithValue({
-//         status: error.response?.status,
+//         message: error.message,
+//       });
+//     }
+//   }
+// );
+// нові машрути
+// heat/:id HeatExchangeDetails
+//valve/:id ValveDetails
+
+// запит по айді одного продукта на HeatExchangeDetails
+export const findHeatExchangeById = createAsyncThunk(
+  "campers/findHeatExchangeById",
+  async (id, thunkAPI) => {
+    try {
+      // У GAS ТІЛЬКИ ТАК:
+      const response = await axios.get("", {
+        params: { id },
+      });
+
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue({
+        message: error.message,
+      });
+    }
+  }
+);
+// export const findHeatExchangeById = createAsyncThunk(
+//   "campers/findHeatExchangeById",
+//   async (id, thunkAPI) => {
+//     try {
+//       // ✅ той самий підхід для HeatExchangeDetails
+//       const file = getProductsFile();
+
+//       const response = await fetch(file);
+//       const data = await response.json();
+
+//       const item = data.find(el => String(el.id) === String(id));
+
+//       return item;
+//     } catch (error) {
+//       return thunkAPI.rejectWithValue({
+//         message: error.message,
+//       });
+//     }
+//   }
+// );
+// запит по айді одного продукта на ValveDetails
+export const findValveDetailsById = createAsyncThunk(
+  "campers/findValveDetailsById",
+  async (id, thunkAPI) => {
+    try {
+      // У GAS ТІЛЬКИ ТАК:
+      const response = await axios.get("", {
+        params: { id },
+      });
+
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue({
+        message: error.message,
+      });
+    }
+  }
+);
+
+// export const findValveDetailsById = createAsyncThunk(
+//   "campers/findValveDetailsById",
+//   async (id, thunkAPI) => {
+//     try {
+//       // ✅ той самий підхід ValveDetails
+//       const file = getProductsFile();
+
+//       const response = await fetch(file);
+//       const data = await response.json();
+
+//       const item = data.find(el => String(el.id) === String(id));
+
+//       return item;
+//     } catch (error) {
+//       return thunkAPI.rejectWithValue({
 //         message: error.message,
 //       });
 //     }

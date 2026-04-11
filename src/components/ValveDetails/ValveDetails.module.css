@@ -1,0 +1,394 @@
+/* =====================================
+   ValveDetails.module.css
+   Mobile first / Flex layout
+   ===================================== */
+
+.containerList {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.titles {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.cartItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.imgCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.images {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== CHARACTERISTICS ===== */
+
+.cartContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cartComent {
+  width: 100%;
+  max-width: 700px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.cartContainerBottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.cartComentBottom {
+  width: 100%;
+  /* max-width: 700px; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.descrip {
+  margin-left: 5px;
+  padding-left: 2px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: SemiBold;
+  font-size: 18px;
+  letter-spacing: 0%;
+  line-height: 1;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 6px;
+}
+
+/* ===== BUTTON ===== */
+
+.buttonIcon {
+  margin-left: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 20px;
+  margin-left: 30px;
+  background: #fbb007;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buttonIcon:hover,
+.buttonIcon:focus {
+  background: linear-gradient(
+    268.5deg,
+    rgba(251, 176, 7, 0.5) 2.63%,
+    rgba(0, 0, 0, 0.5) 97.7%
+  );
+}
+
+.icons {
+  align-self: flex-start;
+  width: 22px;
+  height: 22px;
+  margin-left: 20px;
+}
+
+.linkGo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ===== DESCRIPTION BLOCK ===== */
+
+.containerSecind {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titleDescr {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.schemeTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.moreDescrip {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ===== SCHEME / TABLE ===== */
+
+.imgCheme {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.imag {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* =====================================
+   MOBILE
+   ===================================== */
+
+@media (min-width: 380px) {
+  .cartContainerBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cartComentBottom {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .containerList {
+    width: 95%;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 22px;
+  }
+  .titles {
+    width: 90%;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 140px;
+  }
+  .cartItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .descrip {
+    font-size: 17px;
+  }
+  .imgCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .images {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  .cartContainer {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cartComent {
+    width: 100%;
+    margin: 1px;
+    /* margin-left: 5px; */
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .containerSecind {
+    width: 95%;
+    margin: 5px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* =====================================
+   TABLET
+   ===================================== */
+
+@media (min-width: 768px) {
+  .containerList {
+    width: 95%;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 22px;
+  }
+  .cartItem {
+    gap: 40px;
+  }
+
+  .descrip {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: SemiBold;
+    font-size: 20px;
+    letter-spacing: 0%;
+    line-height: 1;
+  }
+  .imgCard {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .images {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  .cartComent {
+    width: 100%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+}
+
+/* =====================================
+   DESKTOP
+   ===================================== */
+
+@media (min-width: 1024px) {
+  .cartItem {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .imgCard {
+    flex: 1;
+  }
+
+  .cartContainer {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .cartComent {
+    align-items: flex-start;
+  }
+  .descrip {
+    margin-left: 5px;
+    padding-left: 2px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    letter-spacing: 0%;
+    line-height: 1;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 6px;
+  }
+}
+
+/* =====================================
+   LARGE DESKTOP
+   ===================================== */
+
+@media (min-width: 1440px) {
+  .cartContainerBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .containerList {
+    width: 90%;
+  }
+  .titles {
+    width: 90%;
+    font-size: 42px;
+  }
+
+  .cartComent {
+    max-width: 600px;
+  }
+  .descrip {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    letter-spacing: 0%;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 6px;
+  }
+}

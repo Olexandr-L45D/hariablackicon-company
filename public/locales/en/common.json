@@ -171,5 +171,33 @@
     "carttextUsMidle": "After an in-depth analysis, the company identified the main obstacles users faced, such as delivery times for certain models, and, even more importantly, the creation of special machines, such as models made of stainless steel or with customized architectures, while maintaining affordable costs and delivering on average.",
     "carttextUsBotton": " Our production of the HARIA series and our collaboration with leading companies in the sector make Black Icon Srl a flexible and reliable company, focused on service and customization.",
     "openMap": "Open Full Map"
+  },
+  "valvedetails": {
+    "Size": "Size",
+    "FunctionPrinciple": "Function Principle",
+    "Advantages": "Advantages",
+    "NominalPr": "Nominal pressure",
+    "OperatingPr": "Operating pressure",
+    "MinimumOpPr": "Minimum open pressure",
+    "Control_pressure": "Control pressure",
+    "Applicable_medium": "Applicable medium",
+    "Applicable_fluid": "Applicable fluid",
+    "Control_medium": "Control medium",
+    "Control_fluid": "Control fluid",
+    "Medium_temperature": "Medium temperature",
+    "Fluid_temperature": "Fluid temperature",
+    "Ambient_temperature": "Ambient temperature",
+    "Seal_material": "Seal material",
+    "Seal_R_P_material": "Seal ring and packing material",
+    "Disc_material": "Disc material",
+    "Actuator_material": "Actuator material",
+    "Ball_material": "Ball material",
+    "Body_material": "Body material",
+    "Cylinder_material": "Cylinder material",
+    "Control_type": "Control type",
+    "Connection_type": "Connection type",
+    "Flange_standards": "Flange standards",
+    "Structure_lenght": "Structure lenght",
+    "Leakage_class": "Leakage class"
   }
 }

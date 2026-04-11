@@ -171,5 +171,33 @@
     "carttextUsMidle": "Po dogłębnej analizie firma zidentyfikowała główne przeszkody, na jakie napotykają użytkownicy, takie jak czas dostawy niektórych modeli i, co ważniejsze, tworzenie specjalnych maszyn, takich jak modele wykonane ze stali nierdzewnej lub o niestandardowej architekturze, przy jednoczesnym zachowaniu przystępnych kosztów i średniej dostaw.",
     "carttextUsBotton": "Nasza produkcja serii HARIA i współpraca z wiodącymi firmami w branży sprawiają, że Black Icon Srl jest firmą elastyczną i niezawodną, ​​nastawioną na obsługę i personalizację.",
     "openMap": "Otwórz pełną mapę"
+  },
+  "valvedetails": {
+    "Size": "Rozmiar",
+    "FunctionPrinciple": "Zasada działania",
+    "Advantages": "Zalety",
+    "NominalPr": "Ciśnienie nominalne",
+    "OperatingPr": "Ciśnienie robocze",
+    "MinimumOpPr": "Minimalne ciśnienie otwarcia",
+    "Control_pressure": "Kontroluj ciśnienie",
+    "Applicable_medium": "Stosowane medium",
+    "Applicable_fluid": "Stosowany płyn",
+    "Control_medium": "Środek kontrolny",
+    "Control_fluid": "Płyn kontrolny",
+    "Medium_temperature": "Średnia temperatura",
+    "Fluid_temperature": "Temperatura płynu",
+    "Ambient_temperature": "Temperatura otoczenia",
+    "Seal_material": "Materiał uszczelnienia",
+    "Seal_R_P_material": "Pierścień uszczelniający i materiał uszczelniający",
+    "Disc_material": "Materiał płyty",
+    "Actuator_material": "Materiał siłownika",
+    "Ball_material": "Materiał kulkowy",
+    "Body_material": "Materiał korpusu",
+    "Cylinder_material": "Materiał cylindra",
+    "Control_type": "Typ sterowania",
+    "Connection_type": "Typ połączenia",
+    "Flange_standards": "Standardy kołnierzy",
+    "Structure_lenght": "Długość konstrukcji",
+    "Leakage_class": "Klasa wycieku"
   }
 }

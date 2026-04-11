@@ -171,5 +171,33 @@
     "carttextUsMidle": "Dopo un’analisi approfondita, l’azienda ha individuato i principali ostacoli che gli utilizzatori dovevano affrontare, come i tempi di consegna di alcuni modelli, e, cosa ancora più importante, la realizzazione di macchine speciali, come modelli in acciaio inox o con architetture personalizzate, mantenendo costi accessibili e consegnando nella media.",
     "carttextUsBotton": "La nostra produzione della serie HARIA e la nostra collaborazione con aziende leader del settore rendono Black Icon Srl un'azienda flessibile e affidabile, focalizzata sul servizio e sulla personalizzazione.",
     "openMap": "Apri la mappa completa"
+  },
+  "valvedetails": {
+    "Size": "Misurare",
+    "FunctionPrinciple": "Principio di funzione",
+    "Advantages": "Vantaggi",
+    "NominalPr": "Pressione nominale",
+    "OperatingPr": "Pressione di esercizio",
+    "MinimumOpPr": "Pressione minima di apertura",
+    "Control_pressure": "Controllare la pressione",
+    "Applicable_medium": "Mezzo applicabile",
+    "Applicable_fluid": "Fluido applicabile",
+    "Control_medium": "Mezzo di controllo",
+    "Control_fluid": "Controllare il fluido",
+    "Medium_temperature": "Temperatura media",
+    "Fluid_temperature": "Temperatura del fluido",
+    "Ambient_temperature": "Temperatura ambiente",
+    "Seal_material": "Materiale di tenuta",
+    "Seal_R_P_material": "Anello di tenuta e materiale di imballaggio",
+    "Disc_material": "Materiale del disco",
+    "Actuator_material": "Materiale dell'attuatore",
+    "Ball_material": "Materiale della palla",
+    "Body_material": "Materiale del corpo",
+    "Cylinder_material": "Materiale del cilindro",
+    "Control_type": "Tipo di controllo",
+    "Connection_type": "Tipo di connessione",
+    "Flange_standards": "Standard di flangia",
+    "Structure_lenght": "Lunghezza della struttura",
+    "Leakage_class": "Classe di perdita"
   }
 }

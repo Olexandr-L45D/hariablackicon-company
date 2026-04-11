@@ -9,6 +9,7 @@ import { useSearchParams } from "react-router-dom";
 import { setChangeFilter } from "../../redux/filters/slice";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import CatalogGallary from "../../components/CatalogGallary/CatalogGallary";
+import i18n from "../../../i18n.js";
 
 export default function VentPageFilters() {
   const dispatch = useDispatch();
@@ -47,6 +48,18 @@ export default function VentPageFilters() {
       dispatch(fetchAllTruck({ page }));
     }
   }, [dispatch, page, filteres]);
+  // новий useEffect для перезавантаження галереї при сміні мови
+  useEffect(() => {
+    const onLangChange = () => {
+      dispatch(fetchAllTruck({ page: 1 }));
+    };
+
+    i18n.on("languageChanged", onLangChange);
+
+    return () => {
+      i18n.off("languageChanged", onLangChange);
+    };
+  }, [dispatch]);
 
   return (
     <section className={css.cartAll}>

@@ -19,6 +19,7 @@ export default function CompanyTermsPage() {
               alt="Haria Black Icon Srl Company logo"
             />
           </figure>
+          <h2 className={css.heroTitle}>by Black Icon Srl</h2>
           <p className={css.heroText}>{t("companyterms.subtitleCompany")}</p>
         </div>
       </header>

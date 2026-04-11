@@ -24,5 +24,16 @@ i18n
       useSuspense: true,
     },
   });
+// ✅ окрема функція яку імпортую в операції і тепер використовую замість феч: fetch("/data/projectProductsTable.json");
+export const getProductsFile = () => {
+  const lang = i18n.language;
+
+  if (lang === "it") return "/data/projectProductsTable.it.json";
+  if (lang === "pl") return "/data/projectProductsTable.pl.json";
+
+  return "/data/projectProductsTable.en.json";
+};
+
+// ✅ default лишається один
 
 export default i18n;

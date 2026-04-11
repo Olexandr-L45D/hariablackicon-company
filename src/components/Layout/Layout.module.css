@@ -48,7 +48,7 @@
 /* === ВЕЛИКІ ЕКРАНИ (1441+) — опціонально === */
 @media (min-width: 1441px) {
   .layout {
-    max-width: 1600px;
+    max-width: 2000px;
     margin: 0 auto;
   }
 }
